@@ -1,0 +1,27 @@
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <div class="dashboard-stat2 ">
+    <div class="display">
+      <div class="number">
+        <h3 class="font-{{color2}}">
+          <span data-counter="counterup" [attr.data-value]=cnt>0</span>
+          <small class="font-{{color2}}">{{unit}}</small>
+        </h3>
+        <small>{{title}}</small>
+      </div>
+      <div class="icon">
+        <i class="icon-{{icon}}"></i>
+      </div>
+    </div>
+    <div class="progress-info">
+      <div class="progress">
+        <span [ngStyle]="{'width' : percent + '%'}" class="progress-bar progress-bar-success {{color2}}">
+            <span class="sr-only">{{percent}}% progress</span>
+        </span>
+      </div>
+      <div class="status">
+        <div class="status-title"> 달성율</div>
+        <div class="status-number"> {{percent}}% </div>
+      </div>
+    </div>
+  </div>
+</div>

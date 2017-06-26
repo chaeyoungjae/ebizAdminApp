@@ -1,0 +1,73 @@
+<div class="col-lg-6 col-xs-12 col-sm-12">
+  <div class="portlet light bordered">
+    <div class="portlet-title">
+      <div class="caption">
+        <i class="icon-share font-dark hide"></i>
+        <span class="caption-subject font-dark bold uppercase">{{typeName}}</span>
+      </div>
+      <div class="actions" *ngIf="filterBy">
+        <div class="btn-group">
+          <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false"> Filter By
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+            <label class="mt-checkbox mt-checkbox-outline">
+              <input type="checkbox" checked="checked"> 신규주문
+              <span></span>
+            </label>
+            <label class="mt-checkbox mt-checkbox-outline">
+              <input type="checkbox" checked="checked"> 입금확인
+              <span></span>
+            </label>
+            <label class="mt-checkbox mt-checkbox-outline">
+              <input type="checkbox" checked="checked"> 배송준비
+              <span></span>
+            </label>
+            <label class="mt-checkbox mt-checkbox-outline">
+              <input type="checkbox" checked="checked"> 배송중
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portlet-body">
+      <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+        <ul class="feeds">
+
+          <li *ngFor="let l of mainList">
+            <div class="col1">
+              <div class="cont">
+                <div class="cont-col1">
+                            <span class="label label-sm label-info">
+                              <i class="fa fa-bell-o"></i>
+                            </span>
+                </div>
+                <div class="cont-col2">
+                  <div class="desc">
+                              <span class="label label-sm label-success">
+                                <i class="fa fa-truck"></i>&nbsp;{{l.state}}
+                              </span>&nbsp;
+                    <span class="label label-sm label-warning">
+                                <i class="fa fa-user"></i>&nbsp;{{l.userNm}}
+                              </span>&nbsp; {{l.orderTitle}} 외 {{l.orderCnt}}종
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col2">
+              <div class="date">06-17 17:30</div>
+            </div>
+          </li>
+
+        </ul>
+      </div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 141.732px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+      <div class="scroller-footer">
+        <div class="btn-arrow-link pull-right">
+          <a href="javascript:;">더보기</a>
+          <i class="icon-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

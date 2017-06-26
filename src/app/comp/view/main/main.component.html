@@ -1,0 +1,23 @@
+<!-- BEGIN CONTENT BODY -->
+<div class="page-content">
+  <!-- BEGIN PAGE HEADER-->
+  <div class="row widget-row">
+    <app-shortbox title="월매출"    color2="green-sharp" cnt="9,000"  percent="10"  unit="천원" icon="pie-chart"></app-shortbox>
+    <app-shortbox title="일매출"    color2="blue-sharp"  cnt="1,000"  percent="110" unit="천원" icon="basket" ></app-shortbox>
+    <app-shortbox title="일 접속자" color2="red-haze"    cnt="10,000" percent="120" unit="명"   icon="user-following"></app-shortbox>
+    <app-shortbox title="회원"      color2="purple-soft" cnt="100"    percent="120" unit="명"   icon="user"></app-shortbox>
+  </div>
+  <!-- BEGIN PAGE TITLE-->
+  <div class="clearfix"></div>
+  <!-- END PAGE TITLE-->
+  <div class="row">
+    <app-shortlist type="orderlist" [mainList]="mainList"></app-shortlist>
+    <app-shortlist type="chglist"   [mainList]="mainList"></app-shortlist>
+  </div>
+  <div class="row">
+    <app-shortlist type="estlist" [mainList]="mainList"></app-shortlist>
+    <app-shortlist type="reqlist" [mainList]="mainList"></app-shortlist>
+  </div>
+  <!-- END PAGE HEADER-->
+</div>
+<!-- END CONTENT BODY -->
