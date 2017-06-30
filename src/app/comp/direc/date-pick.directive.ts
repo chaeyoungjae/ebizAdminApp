@@ -6,7 +6,11 @@ declare var jQuery : any;
 export class DatePickDirective {
   @Input() options : Object = {};
   constructor(private elementRef : ElementRef) {
-    jQuery(this.elementRef).date
+    if (jQuery().datepicker) {
+      jQuery(this.elementRef).datepicker({
+        orientation: "left",
+        autoclose: true
+      });
+    }
   }
-
 }
