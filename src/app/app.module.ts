@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comp/frame/header/header.component';
 import { FooterComponent } from './comp/frame/footer/footer.component';
@@ -12,7 +11,10 @@ import { ShortlistComponent } from './comp/shortlist/shortlist.component';
 import { ShortboxComponent } from './comp/shortbox/shortbox.component';
 import { MainComponent } from './comp/view/main/main.component';
 import {routing} from './app.routing';
-import { NoticeComponent } from './comp/view/notice/notice.component';
+import { NoticeComponent } from './comp/view/alarm/notice/notice.component';
+import { NoticeUComponent } from './comp/view/alarm/notice-u/notice-u.component';
+import {FroalaEditorModule, FroalaViewModule} from "angular2-froala-wysiwyg";
+import { DatePickDirective } from './comp/direc/date-pick.directive';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,17 @@ import { NoticeComponent } from './comp/view/notice/notice.component';
     ShortlistComponent,
     ShortboxComponent,
     MainComponent,
-    NoticeComponent
+    NoticeComponent,
+    NoticeUComponent,
+    DatePickDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    NgbModule.forRoot()
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
