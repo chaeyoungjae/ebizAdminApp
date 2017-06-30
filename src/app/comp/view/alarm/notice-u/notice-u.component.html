@@ -1,0 +1,110 @@
+<!-- BEGIN CONTENT BODY -->
+<div class="page-content">
+  <div class="page-bar">
+    <ul class="page-breadcrumb">
+      <li>
+        <a href="index.html">홈</a>
+        <i class="fa fa-circle"></i>
+      </li>
+      <li>
+        <a href="#">공지사항</a>
+      </li>
+    </ul>
+  </div>
+  <h1 class="page-title"> 공지사항
+    <small>공지사항-목록을 조회/수정 합니다.</small>
+  </h1>
+  <div>
+  <div class="portlet light bordered">
+    <div class="portlet-title">
+      <div class="caption">
+        <i class="icon-equalizer font-red-sunglo"></i>
+        <span class="caption-subject font-red-sunglo bold uppercase">상세</span>
+        <span class="caption-helper">정보를 수정하거나 삭제한다.</span>
+      </div>
+      <div class="tools">
+        <a href="" class="reload" data-original-title="" title=""> </a>
+        <a href="" class="remove" data-original-title="" title=""> </a>
+      </div>
+    </div>
+    <div class="portlet-body form">
+      <!-- BEGIN FORM-->
+
+      <form action="#" class="form-horizontal">
+        <div class="form-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">제목</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" placeholder="Chee Kin">
+                  <span class="help-block"> This is inline help </span>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group has-error">
+                <label class="control-label col-md-3">타입</label>
+                <div class="col-md-9">
+                  <select name="foo" class="form-control">
+                    <option value="1">일반</option>
+                    <option value="1">이벤트</option>
+                    <option value="1">고정</option>
+                  </select>
+                  <span class="help-block"> This field has error. </span>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">시작일자</label>
+                <div class="col-md-9">
+                  <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                    <input type="text" class="form-control" readonly >
+                    <span class="input-group-btn">
+                        <button class="btn default" type="button">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">종료일자</label>
+                <div class="col-md-9">
+                  <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                    <input type="text" class="form-control" readonly >
+                    <span class="input-group-btn">
+                        <button class="btn default" type="button">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div [froalaEditor]="options"></div>
+            </div>
+          </div>
+          <!--/row-->
+        </div>
+        <div class="form-actions right">
+            <button type="submit" class="btn green">저장</button>
+            <button type="button" class="btn default">삭제</button>
+            <button type="button" class="btn default">목록</button>
+        </div>
+      </form>
+      <!-- END FORM-->
+    </div>
+  </div>
+</div>
+</div>
