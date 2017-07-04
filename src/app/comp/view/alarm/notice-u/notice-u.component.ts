@@ -13,9 +13,14 @@ export class NoticeUComponent implements OnInit {
     immediateAngularModelUpdate : true,
     theme : 'royal'
   }
+  public dateOption : Object = {
+
+  }
   constructor() { }
 
   ngOnInit() {
   }
+  selected () {
 
+  }
 }
