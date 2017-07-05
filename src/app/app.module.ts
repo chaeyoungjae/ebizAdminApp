@@ -10,11 +10,13 @@ import { AlramComponent } from './comp/frame/header/alram/alram.component';
 import { ShortlistComponent } from './comp/shortlist/shortlist.component';
 import { ShortboxComponent } from './comp/shortbox/shortbox.component';
 import { MainComponent } from './comp/view/main/main.component';
-import {routing} from './app.routing';
+import { routing} from './app.routing';
 import { NoticeComponent } from './comp/view/alarm/notice/notice.component';
 import { NoticeUComponent } from './comp/view/alarm/notice-u/notice-u.component';
-import {FroalaEditorModule, FroalaViewModule} from "angular2-froala-wysiwyg";
+import { FroalaEditorModule, FroalaViewModule} from "angular2-froala-wysiwyg";
 import { DatePickDirective } from './comp/direc/date-pick.directive';
+import { FileDropDirective, FileSelectDirective} from "ng2-file-upload";
+import { FileuploadComponent } from './comp/frame/fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { DatePickDirective } from './comp/direc/date-pick.directive';
     MainComponent,
     NoticeComponent,
     NoticeUComponent,
-    DatePickDirective
+    DatePickDirective,
+    FileDropDirective,
+    FileSelectDirective,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,

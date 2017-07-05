@@ -7,4 +7,4 @@
 @import "/assets/layouts/layout/css/themes/darkblue.min.css";
 @import "/assets/layouts/layout/css/custom.min.css";
 @import "/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css";
-@import "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+@import "/assets/global/plugins/jquery-ui/jquery-ui.min.css";
